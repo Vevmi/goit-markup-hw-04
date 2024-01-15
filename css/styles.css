@@ -432,15 +432,12 @@ color: var(--SLATE, #434455);
     padding: 32px 16px;
     border: 1px solid #e7e9fc;
     border-top: none;
-    margin-bottom: 8px;
 }
 .app-list {
     width: calc((100% - 48px) / 3);
-    box-shadow: 250ms cubic-bezier(0.4, 0, 0.2, 1);
-    transform: translateY(0%);
+    cursor: pointer;
 }
 .app-list:hover {
-    
     color: #FFFFFF;
     box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08), 0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
 }
@@ -460,6 +457,7 @@ color: var(--SLATE, #434455);
 .overlay {
 position: absolute;
 top: 0;
+left: 0;
 height: 100%;
 width: 100%;
 
@@ -470,7 +468,13 @@ font-weight: 400;
 line-height: 1.5;
 letter-spacing: 0.02em;
 padding: 40px 32px;
+background-color: #404BBF;
 
 transform: translateY(100%);
 transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1);
+}
+
+.app-list:hover .overlay,
+.app-list:focus .overlay {
+    transform: translateY(0%);
 }
