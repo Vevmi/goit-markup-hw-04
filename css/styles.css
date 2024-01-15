@@ -95,14 +95,13 @@ h1,h2,h3,h4,h5,p {
         color: #404bbf;
 }
 .menu-item::after{
-    content: ;
+    content: "";
     position: absolute;
     left: 0;
     bottom: -1px;
     height: 4px;
     background: #404BBF;
     border-radius: 2px;
-    display: block;
 }
 
 .menu-item:hover,
